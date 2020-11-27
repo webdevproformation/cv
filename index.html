@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV</title>
+    <style>
+        .container{
+            width: 960px;
+            margin: 0 auto;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+        p{
+            margin: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+        h2{
+            border-bottom: 1px solid black;
+            font-size: 130%;
+            width:100%;
+        }
+        .container section:nth-of-type(1){
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .container section:nth-of-type(1) ul li{
+            display:flex;
+        }
+        .container section:nth-of-type(1) ul{
+            width: 600px;
+        }
+        .container section:nth-of-type(1) img{
+            margin-left: auto;
+        }
+
+        .container section:nth-of-type(1) p:nth-of-type(1){
+            width: 40%;
+            font-weight: bold;
+        }
+
+        section article{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        section article time{
+            width: 10%;
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        section article .droite{
+            width: 90%;
+        }
+        section article .droite p:nth-of-type(1){
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Curriculum Vitae</h1>
+        <section>
+            <h2>Personnal Data</h2>
+            <div class="gauche">
+                <!-- ul>li*8>(p>lorem3)+p>lorem4 -->
+                <ul>
+                    <li>
+                        <p>Lorem, ipsum dolor.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </li>
+                    <li>
+                        <p>A, fugiat? Laborum.</p>
+                        <p>Qui aliquam velit fugiat!</p>
+                    </li>
+                    <li>
+                        <p>Ratione, laboriosam atque.</p>
+                        <p>Molestiae ipsam deleniti iusto?</p>
+                    </li>
+                    <li>
+                        <p>Facere, pariatur cumque.</p>
+                        <p>Aliquam beatae adipisci in.</p>
+                    </li>
+                    <li>
+                        <p>Ex, eius quia.</p>
+                        <p>Corporis culpa quisquam officiis?</p>
+                    </li>
+                    <li>
+                        <p>Fuga, reiciendis quis.</p>
+                        <p>Perferendis adipisci iure nobis.</p>
+                    </li>
+                    <li>
+                        <p>Neque, deleniti numquam.</p>
+                        <p>Sunt repellendus iusto velit.</p>
+                    </li>
+                    <li>
+                        <p>Quod, aliquid nobis.</p>
+                        <p>Eveniet laborum rerum tenetur.</p>
+                    </li>
+                </ul>
+            </div>
+            <img src="https://via.placeholder.com/200x250" alt="">
+        </section>
+        <section>
+            <h2>Education</h2>
+            <!-- article*3>(time>{date})+.droite>p*4>lorem10 -->
+            <article>
+                <time>date</time>
+                <div class="droite">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus, tempore.</p>
+                    <p>Quae distinctio, odio pariatur doloremque sequi provident cum dolore explicabo.</p>
+                    <p>Autem, nulla. Possimus error nobis voluptatibus dolorum voluptate explicabo harum?</p>
+                    <p>Sapiente ipsam quo tempore quibusdam! Voluptatibus corrupti neque quas blanditiis?</p>
+                </div>
+            </article>
+            <article>
+                <time>date</time>
+                <div class="droite">
+                    <p>Asperiores suscipit nam eos, sapiente officiis aliquam accusamus nostrum eius!</p>
+                    <p>Aspernatur praesentium eligendi possimus inventore suscipit tenetur cumque voluptatum molestias.</p>
+                    <p>Doloremque commodi unde rerum accusantium, recusandae ipsam hic distinctio labore?</p>
+                    <p>Corporis officia quidem, ipsa adipisci commodi rem ab obcaecati repellat.</p>
+                </div>
+            </article>
+            <article>
+                <time>date</time>
+                <div class="droite">
+                    <p>Harum ipsam tempore optio aliquid quod at repudiandae cumque autem.</p>
+                    <p>Illo laborum amet autem quo aliquid cupiditate accusamus nulla officia!</p>
+                    <p>Expedita dolorem consequatur vero quidem quam delectus sunt ea molestiae?</p>
+                    <p>Optio, illum? Blanditiis accusantium explicabo praesentium esse debitis! Quidem, earum.</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h2>Recherches</h2>
+            <!-- article*2>(time>{date})+p>lorem7 -->
+            <article>
+                <time>date</time>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+            </article>
+            <article>
+                <time>date</time>
+                <p>Ad qui aut libero odio vel tempora.</p>
+            </article>
+        </section>
+        <section>
+            <h2>Teaching</h2>
+            <!-- article*2>(time>{date})+.droite>p*2>lorem7 -->
+            <article>
+                <time>date</time>
+                <div class="droite">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Tempora expedita debitis quia iure, soluta corrupti.</p>
+                </div>
+            </article>
+            <article>
+                <time>date</time>
+                <div class="droite">
+                    <p>Nulla voluptatibus quibusdam, incidunt quo vitae maiores?</p>
+                    <p>Deleniti blanditiis quae sint officiis, delectus provident.</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <h2>Publications</h2>
+            <article>
+                <time>date</time>
+                <div class="droite">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                    <p>Similique magni eligendi soluta facilis aspernatur delectus?</p>
+                </div>
+            </article>
+            <article>
+                <time>date</time>
+                <div class="droite">
+                    <p>Nostrum natus magnam obcaecati, enim necessitatibus soluta!</p>
+                    <p>Ea odio, error voluptatibus id iure voluptas.</p>
+                </div>
+            </article>
+        </section>
+    </div>
+</body>
+</html>
